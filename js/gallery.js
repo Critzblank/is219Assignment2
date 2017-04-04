@@ -90,6 +90,22 @@ $(document).ready( function() {
       $('div.details').fadeToggle('slow', 'swing');
       }
     });
+    
+  $( "#nextPhoto" ).click(function() {
+    swapPhoto();
+    });
+
+  $( "#prevPhoto" ).click(function() {
+    
+    if(mCurrentIndex == 0){
+      mCurrentIndex = mImages.length-=1;
+      }
+    else{
+      mCurrentIndex-=2;
+      }
+    
+    swapPhoto();
+    });
 });
 
 window.addEventListener('load', function() {
