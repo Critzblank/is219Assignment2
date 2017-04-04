@@ -79,7 +79,17 @@ $(document).ready( function() {
 	
 	// This initially hides the photos' metadata information
 	$('.details').eq(0).hide();
-	
+ 
+  $('img.moreIndicator').click(function()  {
+    if($(this).hasClass('rot90')){
+      $(this).removeClass('rot90').addClass('rot270');
+      $('div.details').fadeToggle('slow', 'swing');
+      }
+    else  {
+      $(this).removeClass('rot270').addClass('rot90');
+      $('div.details').fadeToggle('slow', 'swing');
+      }
+    });
 });
 
 window.addEventListener('load', function() {
