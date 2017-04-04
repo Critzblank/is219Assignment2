@@ -64,6 +64,14 @@ body {
   right: 0px;
 }
 
+#nextPhoto:hover{
+	opacity: 0.8;
+}
+
+#prevPhoto:hover{
+	opacity: 0.8;
+}
+
 .details p {
 	margin-top: 20px;
 }
