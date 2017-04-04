@@ -85,3 +85,30 @@ function GalleryImage(location, description, date, img) {
   this.date = date;
   this.img = img;
 }
+
+function reqListener(){
+  
+  try{
+    var mJson = JSON.parse(this.responseText);
+    
+    for (var i = 0; i < mJson.images.length; i++){
+      var temp = mJson.images[i];
+      var picture = new GalleryImage(temp.imgLocation, temp.description, temp.date, temp.imgPath);
+      mImages.push(picture);
+      }
+    }
+  
+  catch(error){
+    mRequest.addEventListener("load", reqListener);
+    mRequest.open("GET", "images.json");
+    mRequest.send();
+    }
+}
+
+mRequest.addEventListener("load", reqListener);
+mRequest.open("GET", "images.json");
+mRequest.send();
+
+    
+    
+    
