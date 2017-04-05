@@ -7,7 +7,7 @@
             "date": "01/01/2016"
         },
         {
-            "imgPath": "img/streeArt/sale.jpg",
+            "imgPath": "img/streetArt/sale.jpg",
             "imgLocation": "London",
             "description": "Banksy",
             "date": "01/02/2016"
@@ -17,12 +17,6 @@
             "imgLocation": "Paris",
             "description": "Space Invader",
             "date": "01/03/2016"
-        },
-        {
-            "imgPath": "img/streetArt/escif.jpg",
-            "imgLocation": "Katowice",
-            "description": "Escif",
-            "date": "01/04/2016"
         },
         {
             "imgPath": "img/streetArt/obey.jpg",
