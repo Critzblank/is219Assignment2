@@ -39,6 +39,8 @@ body {
 .thumbnail {
 	position: relative;
 	box-shadow: 1px 3px 20px 0px;
+  width: 518px;
+  height: 100%;
 }
 
 
